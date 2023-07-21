@@ -45,11 +45,14 @@ export default class FormClass extends Component {
     return (
       <div className="Main_Container">
 
-        <h1 className="heading">EMPLOYEE FEEDBACK FORM</h1>
 
         {this.state.clicked ? 
 
           <form action="#">
+            <h1 className="heading">EMPLOYEE FEEDBACK FORM</h1>
+            <br />
+            <br />
+
             <label htmlFor="name">Name :</label>
             <input type="text"  name="Name" value={this.state.Name} onChange={this.handleChange} />
 

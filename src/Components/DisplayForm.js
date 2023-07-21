@@ -9,7 +9,9 @@ class DisplayFrom extends Component {
   render() {
     return (
       <>
+          <h1 className="heading">EMPLOYEE FEEDBACK DATA</h1>
         <div className="contanier">
+            
           {this.props.value.map((item, index) => {
             return (
               <div className="contanier_item" key={index}>
