@@ -1,38 +1,93 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(179deg, #00ffffa1, rgb(255 0 0 / 34%), #fff);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+html{
+  font-size: 62.5%;
+}
+.heading{
+  font-size: 5rem;
+}
+.Main_Container{
+  /* width: 100vw; */
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main_Container form label{
+  font-size: 3rem;
+}
+.Main_Container form input{
+  width: 250px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(151, 215, 241, 0.733);
+  font-size: 2.5rem;
+  padding-left: 15px;
+}
+button{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: rgba(151, 215, 241, 0.733);
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Display Style  */
+.contanier{
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 50px 30px;
+  gap: 30px;
+}
+.contanier_item{
+  width: 500px;
+  height: 70px;
+  background-color: violet;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Media Queries */
+
+@media screen and (max-width: 425px){
+  .Main_Container form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contanier_item{
+    height: 80%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
