@@ -68,7 +68,7 @@ export default class FormClass extends Component {
             <br />
 
             <label htmlFor="Rating">Rating</label>
-            <input type="text" name="Rating" id="Rating" value={this.state.Rating} onChange={this.handleChange}/>
+            <input type="number" name="Rating" id="Rating" value={this.state.Rating} onChange={this.handleChange}/>
 
             <br />
             <br />
